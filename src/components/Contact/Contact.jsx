@@ -1,32 +1,33 @@
 import React from "react";
 
 import styles from "./Contact.module.css";
-import { getImageUrl } from "../../utils";
+import { INFO } from "../../constants/info";
 
 export const Contact = () => {
   return (
-    <footer id="contact" className={styles.container}>
-      <div className={styles.text}>
-        <h2>Contact</h2>
-        <p>Feel free to reach out!</p>
-      </div>
-      <ul className={styles.links}>
-        <li className={styles.link}>
-          <img src={getImageUrl("contact/emailIcon.png")} alt="Email icon" />
-          <a href="mailto:myemail@email.com">myemail@email.com</a>
-        </li>
-        <li className={styles.link}>
-          <img
-            src={getImageUrl("contact/linkedinIcon.png")}
-            alt="LinkedIn icon"
-          />
-          <a href="https://www.linkedin.com/myname">linkedin.com/myname</a>
-        </li>
-        <li className={styles.link}>
-          <img src={getImageUrl("contact/githubIcon.png")} alt="Github icon" />
-          <a href="https://www.github.com/myname">github.com/myname</a>
-        </li>
-      </ul>
+    <footer id="footer" className={styles.footerContainer}>
+      <section id="contact">
+        <div className={styles.contactContainer}>
+        <div className={styles.text}>
+          <h2>Contact</h2>
+          <p>Feel free to reach out!</p>
+        </div>
+        <ul className={styles.links}>
+          {
+            INFO.map((item, idx) => (
+              <li key={idx} className={styles.link}>
+                <img src={item.imgSrc} alt={item.id} />
+                <a target="_blank" href={item.link}>{item.display}</a>
+              </li>
+            ))
+          }
+        </ul>
+        </div>
+        <div className={styles.signature}>
+          <div>&copy; Copyright 2024 Portfolio | All Rights Reserved</div>
+          <div>Designed and developed by Sahil Debnath with ❤️</div>
+        </div>
+      </section>
     </footer>
   );
 };

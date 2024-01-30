@@ -20,21 +20,21 @@
 }
 
 .title {
-  font-size: 72px;
+  font-size: 62px;
   font-weight: 900;
   margin-bottom: 33px;
   font-family: var(--font-roboto);
   background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 70%,
-    rgba(255, 255, 255, 0) 120%
+    30deg,
+    rgba(255, 255, 255, 1) 60%,
+    rgba(255, 255, 255, 0) 100%
   );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 
 .description {
-  font-size: 30px;
+  font-size: 25px;
   font-family: var(--font-roboto);
   margin-bottom: 52px;
 }
@@ -50,10 +50,15 @@
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.heroImg {
-  width: 50%;
-  z-index: 1;
+.heroImgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.heroImg {
+  width: 80%;
+  z-index: 1;
   animation-name: floating;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -107,5 +112,9 @@
 
   .content {
     align-items: center;
+  }
+
+  .heroImgContainer {
+    margin-bottom: 32px;
   }
 }

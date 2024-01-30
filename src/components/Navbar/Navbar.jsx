@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import clsx from 'clsx';
 
 import styles from "./Navbar.module.css";
 import { getImageUrl } from "../../utils";
@@ -23,7 +24,12 @@ export const Navbar = () => {
           onClick={() => setMenuOpen(!menuOpen)}
         />
         <ul
-          className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
+          className={clsx(
+            styles.menuItems,
+            {
+              [styles.menuOpen]: menuOpen
+            }
+          )}
           onClick={() => setMenuOpen(false)}
         >
           <li>
@@ -36,7 +42,7 @@ export const Navbar = () => {
             <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#about">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>

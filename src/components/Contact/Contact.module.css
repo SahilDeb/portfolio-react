@@ -1,26 +1,35 @@
 @import "../../vars.css";
 
-.container {
+.footerContainer {
   color: var(--color-text);
   margin-top: 120px;
   background-color: var(--color-secondary);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
   width: 100vw;
   padding: 58px 10%;
   gap: 10px;
 }
+.contactContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.signature {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  color: var(--color-text);
+}
 
 .text h2 {
-  font-size: 80px;
+  font-size: 60px;
   font-weight: 700;
-  letter-spacing: 4px;
+  letter-spacing: 5px;
 }
 
 .text p {
-  font-size: 40px;
-  font-weight: 400;
+  font-size: 30px;
+  font-weight: 700;
   letter-spacing: 2px;
 }
 
@@ -38,10 +47,14 @@
   gap: 25px;
 }
 
+.link img {
+  width: 40px;
+}
+
 .link a {
   color: var(--color-text);
   text-decoration: none;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 400;
   letter-spacing: 1.5px;
 }
