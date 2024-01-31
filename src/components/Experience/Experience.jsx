@@ -1,7 +1,6 @@
 import React from "react";
 
 import styles from "./Experience.module.css";
-import skills from "../../data/skills.json";
 import history from "../../data/history.json";
 import { getImageUrl } from "../../utils";
 
@@ -10,18 +9,20 @@ export const Experience = () => {
     <section className={styles.container} id="experience">
       <h2 className={styles.title}>Experience</h2>
       <div className={styles.content}>
-        <div className={styles.skills}>
-          {skills.map((skill, id) => {
-            return (
-              <div key={id} className={styles.skill}>
-                <div className={styles.skillImageContainer}>
-                  <img src={getImageUrl(skill.imageSrc)} alt={skill.title} />
-                </div>
-                <p>{skill.title}</p>
-              </div>
-            );
-          })}
+
+        <div className={styles.resumeContainer}>
+          <div className={styles.resume}>
+            <div className={styles.resumeImageContainer}>
+              <a href="assets/experience/cv.pdf" download="cv">
+                <img alt="cv" src={getImageUrl("experience/pdf.png")} />
+              </a>
+            </div>
+            <p>
+              Download
+            </p>
+          </div>
         </div>
+
         <ul className={styles.history}>
           {history.map((historyItem, id) => {
             return (
