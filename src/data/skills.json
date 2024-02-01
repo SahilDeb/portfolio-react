@@ -1,30 +1,126 @@
 [
   {
     "title": "HTML",
+    "type": "language",
     "imageSrc": "skills/html.png"
   },
   {
     "title": "CSS",
+    "type": "language",
     "imageSrc": "skills/css.png"
   },
   {
+    "title": "Sass",
+    "type": "language",
+    "imageSrc": "skills/sass.png"
+  },
+  {
+    "title": "Javascript",
+    "type": "language",
+    "imageSrc": "skills/javascript.png"
+  },
+  {
+    "title": "Typescript",
+    "type": "language",
+    "imageSrc": "skills/typescript.png"
+  },
+  {
+    "title": "C#",
+    "type": "language",
+    "imageSrc": "skills/c-sharp.png"
+  },
+
+  {
     "title": "React",
+    "type": "framework",
     "imageSrc": "skills/react.png"
   },
   {
+    "title": "Redux",
+    "type": "framework",
+    "imageSrc": "skills/redux.png"
+  },
+  {
+    "title": "Bootstrap",
+    "type": "framework",
+    "imageSrc": "skills/bootstrap.png"
+  },
+  {
+    "title": "Material UI",
+    "type": "framework",
+    "imageSrc": "skills/material-ui.png"
+  },
+  {
+    "title": "Storybook",
+    "type": "framework",
+    "imageSrc": "skills/storybook.png"
+  },
+  {
+    "title": "Jest",
+    "type": "framework",
+    "imageSrc": "skills/jest.png"
+  },
+  {
     "title": "Node",
+    "type": "framework",
     "imageSrc": "skills/node.png"
   },
   {
-    "title": "GraphQL",
-    "imageSrc": "skills/graphql.png"
+    "title": ".NET Core",
+    "type": "framework",
+    "imageSrc": "skills/dot-net-core.png"
   },
+
   {
     "title": "MongoDB",
+    "type": "database",
     "imageSrc": "skills/mongodb.png"
   },
   {
+    "title": "PostgreSQL",
+    "type": "database",
+    "imageSrc": "skills/postgresql.png"
+  },
+  {
+    "title": "MS SQL",
+    "type": "database",
+    "imageSrc": "skills/sql.png"
+  },
+
+  {
+    "title": "Gitlab",
+    "type": "tools",
+    "imageSrc": "skills/gitlab.png"
+  },
+  {
+    "title": "Git",
+    "type": "tools",
+    "imageSrc": "skills/git.png"
+  },
+  {
+    "title": "Vite",
+    "type": "tools",
+    "imageSrc": "skills/vite.png"
+  },
+  {
+    "title": "Postman",
+    "type": "tools",
+    "imageSrc": "skills/postman.png"
+  },
+  {
+    "title": "VS Code",
+    "type": "tools",
+    "imageSrc": "skills/vs-code.png"
+  },
+
+  {
     "title": "Figma",
+    "type": "design",
     "imageSrc": "skills/figma.png"
+  },
+  {
+    "title": "Sketch",
+    "type": "design",
+    "imageSrc": "skills/sketch.png"
   }
 ]

@@ -1,21 +1,37 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
-import styles from "./Experience.module.css";
+import styles from "./TechStack.module.css";
 import skills from "../../data/skills.json";
-import history from "../../data/history.json";
 import { getImageUrl } from "../../utils";
 
-export const Experience = () => {
+export const TechStack = () => {
+  const [langaugesData, setLanguagesData] = useState([]);
+  const [frameworkData, setFrameworkData] = useState([]);
+  const [databaseData, setDatabaseData] = useState([]);
+  const [toolsData, setToolsData] = useState([]);
+  const [designData, setDesignData] = useState([]);
+
+  useEffect(() => {
+    if (skills) {
+      setLanguagesData(skills.filter(data => data.type === "language"));
+      setFrameworkData(skills.filter(data => data.type === "framework"));
+      setDatabaseData(skills.filter(data => data.type === "database"));
+      setToolsData(skills.filter(data => data.type === "tools"));
+      setDesignData(skills.filter(data => data.type === "design"));
+    }
+  })
+
   return (
-    <section className={styles.container} id="experience">
-      <h2 className={styles.title}>Experience</h2>
-      <div className={styles.content}>
-        
-        <div className={styles.skills}>
-          {skills.map((skill, id) => {
+    <section className={styles.container} id="tech-stack">
+      <h2 className={styles.title}>Tech Stack</h2>
+
+      <div className={styles.sectionContainer}>
+        <h2 className={styles.subTitle}>Languages:</h2>
+        <div className={styles.skillsContainer}>
+          {langaugesData.map((skill, id) => {
             return (
-              <div key={id} className={styles.skill}>
-                <div className={styles.skillImageContainer}>
+              <div key={id} className={styles.skills}>
+                <div className={styles.skillsImageContainer}>
                   <img src={getImageUrl(skill.imageSrc)} alt={skill.title} />
                 </div>
                 <p>{skill.title}</p>
@@ -23,28 +39,70 @@ export const Experience = () => {
             );
           })}
         </div>
-        
-        <ul className={styles.history}>
-          {history.map((historyItem, id) => {
+      </div>
+
+      <div className={styles.sectionContainer}>
+        <h2 className={styles.subTitle}>Libraries/Frameworks:</h2>
+        <div className={styles.skillsContainer}>
+          {frameworkData.map((skill, id) => {
             return (
-              <li key={id} className={styles.historyItem}>
-                <img
-                  src={getImageUrl(historyItem.imageSrc)}
-                  alt={`${historyItem.organisation} Logo`}
-                />
-                <div className={styles.historyItemDetails}>
-                  <h3>{`${historyItem.role}, ${historyItem.organisation}`}</h3>
-                  <p>{`${historyItem.startDate} - ${historyItem.endDate}`}</p>
-                  <ul>
-                    {historyItem.experiences.map((experience, id) => {
-                      return <li key={id}>{experience}</li>;
-                    })}
-                  </ul>
+              <div key={id} className={styles.skills}>
+                <div className={styles.skillsImageContainer}>
+                  <img src={getImageUrl(skill.imageSrc)} alt={skill.title} />
                 </div>
-              </li>
+                <p>{skill.title}</p>
+              </div>
             );
           })}
-        </ul>
+        </div>
+      </div>
+
+      <div className={styles.sectionContainer}>
+        <h2 className={styles.subTitle}>Databases:</h2>
+        <div className={styles.skillsContainer}>
+          {databaseData.map((skill, id) => {
+            return (
+              <div key={id} className={styles.skills}>
+                <div className={styles.skillsImageContainer}>
+                  <img src={getImageUrl(skill.imageSrc)} alt={skill.title} />
+                </div>
+                <p>{skill.title}</p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className={styles.sectionContainer}>
+        <h2 className={styles.subTitle}>Tools:</h2>
+        <div className={styles.skillsContainer}>
+          {toolsData.map((skill, id) => {
+            return (
+              <div key={id} className={styles.skills}>
+                <div className={styles.skillsImageContainer}>
+                  <img src={getImageUrl(skill.imageSrc)} alt={skill.title} />
+                </div>
+                <p>{skill.title}</p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className={styles.sectionContainer}>
+        <h2 className={styles.subTitle}>Design:</h2>
+        <div className={styles.skillsContainer}>
+          {designData.map((skill, id) => {
+            return (
+              <div key={id} className={styles.skills}>
+                <div className={styles.skillsImageContainer}>
+                  <img src={getImageUrl(skill.imageSrc)} alt={skill.title} />
+                </div>
+                <p>{skill.title}</p>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </section>
   );
