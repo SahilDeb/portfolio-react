@@ -1,0 +1,20 @@
+[
+  {
+    "id": "email",
+    "imgSrc": "contact/emailIcon.png",
+    "link": "mailto:sahildebnath091195@gmail.com",
+    "display": "sahildebnath091195@gmail.com"
+  },
+  {
+    "id": "linkedin",
+    "imgSrc": "contact/linkedinIcon.png",
+    "link": "https://www.linkedin.com/in/sahildebnath/",
+    "display": "linkedin.com/sahildebnath"
+  },
+  {
+    "id": "github",
+    "imgSrc": "contact/githubIcon.png",
+    "link": "https://github.com/SahilDeb",
+    "display": "github.com/SahilDeb"
+  }
+]

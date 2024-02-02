@@ -19,7 +19,7 @@ export const TechStack = () => {
       setToolsData(skills.filter(data => data.type === "tools"));
       setDesignData(skills.filter(data => data.type === "design"));
     }
-  })
+  }, []);
 
   return (
     <section className={styles.container} id="tech-stack">
