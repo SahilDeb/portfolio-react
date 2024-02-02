@@ -13,7 +13,7 @@ export const Contact = () => {
             <h2>Contact</h2>
             <p>Feel free to reach out!</p>
           </div>
-          <ul className={styles.links}>
+          <ul className={styles.linksContainer}>
             {
               contactInfo.map((item, idx) => (
                 <li key={idx} className={styles.link}>

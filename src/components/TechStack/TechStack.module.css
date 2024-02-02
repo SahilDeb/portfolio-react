@@ -55,7 +55,7 @@
 }
 
 .skills img {
-  width: 65px;
+  width: 60px;
 }
 
 .skills p {
@@ -81,8 +81,8 @@
   }
 
   .skillsImageContainer {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
   }
 
   .skills {
@@ -91,10 +91,11 @@
   }
 
   .skills img {
-    width: 50px;
+    width: 35px;
   }
 
   .skills p {
+    font-size: 18px;
     margin-left: 8px;
   }
 }

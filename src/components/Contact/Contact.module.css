@@ -38,7 +38,7 @@
   letter-spacing: 0.1em;
 }
 
-.links {
+.linksContainer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -103,14 +103,22 @@
     letter-spacing: 4px;
   }
 
-  .links {
+  .linksContainer {
+    gap: 16px;
+  }
+
+  .link {
     gap: 8px;
+  }
+
+  .link img {
+    width: 30px;
   }
 
   .link a {
     color: var(--color-text);
     text-decoration: none;
     font-size: 20px;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.02em;
   }
 }

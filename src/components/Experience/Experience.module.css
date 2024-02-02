@@ -59,11 +59,15 @@
 }
 
 .historyItemDetails ul {
-  margin-top: 6px;
+  margin-top: 12px;
   list-style-position: outside;
   font-size: 22px;
   list-style-type: disc;
   margin-left: 22px;
+}
+
+.historyItemDetails li {
+  padding: 8px 0;
 }
 
 .resumeContainer {
@@ -119,7 +123,34 @@
     gap: 9px;
   }
 
+  .historyItemDetails h3 {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  
+  .historyItemDetails p {
+    font-size: 18px;
+    font-weight: 0;
+  }
+
+  .historyItemDetails ul {
+    font-size: 20px;
+  }
+
+  .historyItemDetails li {
+    padding: 4px 0;
+  }
+
   .resumeContainer {
     align-items: center;
+  }
+
+  .resumeImageContainer {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .resume img {
+    width: 50px;
   }
 }

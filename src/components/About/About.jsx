@@ -19,11 +19,9 @@ export const About = () => {
             about.map((data, idx) => (
               <li key={idx} className={styles.aboutItem}>
                 <img src={getImageUrl(data.imageSrc)} alt="Cursor icon" />
-                <div className={styles.aboutItemText}>
-                  <p>
-                    {data.desc}
-                  </p>
-                </div>
+                <p>
+                  {data.desc}
+                </p>
               </li>
             ))
           }
