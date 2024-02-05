@@ -13,8 +13,8 @@ export const Experience = () => {
         <div className={styles.resumeContainer}>
           <div className={styles.resume}>
             <div className={styles.resumeImageContainer}>
-              <a href="assets/experience/cv.pdf" download="cv">
-                <img alt="cv" src={getImageUrl("experience/pdf.png")} />
+              <a href="assets/experience/resume.pdf" download="resume">
+                <img alt="resume" src={getImageUrl("experience/pdf.png")} />
               </a>
             </div>
             <p>
